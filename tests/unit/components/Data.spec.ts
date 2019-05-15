@@ -15,17 +15,17 @@ describe('Data.vue', () => {
   wrapper.setData(data);
 
   /**
-   * Wrapper
-   *   ==> find (selector: string): Wrapper<Vue>
-   *     在wrapper中查询指定元素，然后返回值是自身
-   *     然后后面的text() exists()其实都是针对刚才查询到的元素
-   *     这样的设计应该是为了编码的统一
+   * Wrapper: 一个 Wrapper 是一个包括了一个挂载组件或 vnode，以及测试该组件或 vnode 的方法。
    *
-   *   ==>exists (): boolean
-   *     查询的元素是否存在
+   *   ==> find (selector: string): Wrapper<Vue>
+   *     返回匹配选择器的第一个 DOM 节点或 Vue 组件的 Wrapper。
+   *
+   *   ==> exists (): boolean
+   *     断言 Wrapper 或 WrapperArray 是否存在。
+   *     如果被一个空 Wrapper 或 WrapperArray 调用则返回 false。
    *
    *   ==> text (): string
-   *     获得查询到的元素的文本内容
+   *     返回 Wrapper 的文本内容。
    *
    */
 

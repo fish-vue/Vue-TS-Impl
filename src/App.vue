@@ -2,16 +2,19 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <Model/>
+    <Template/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Model from './components/model/Index.vue';
+import Template from './components/template/Index.vue';
 
 @Component({
   components: {
     Model,
+    Template
   },
 })
 export default class App extends Vue {}
