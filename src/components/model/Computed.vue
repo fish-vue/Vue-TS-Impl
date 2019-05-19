@@ -1,6 +1,6 @@
 <template>
   <div>
-<!--  v-model可以实现双向数据绑定  -->
+    <h2>v-model可以实现双向数据绑定</h2>
     <input id="firstName" v-model="firstName">
     <input id="lastName" v-model="lastName">
     <input id="fullName" v-model="fullName">
