@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <Model/>
     <Template/>
+    <Event/>
   </div>
 </template>
 
@@ -10,11 +11,13 @@
 import { Component, Vue } from 'vue-property-decorator';
 import Model from './components/model/Index.vue';
 import Template from './components/template/Index.vue';
+import Event from './components/events/Index.vue';
 
 @Component({
   components: {
     Model,
-    Template
+    Template,
+    Event
   },
 })
 export default class App extends Vue {}
